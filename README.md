@@ -22,17 +22,13 @@ Here are some ideas to get you started:
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0"
 
   // Room
-    implementation "androidx.room:room-runtime:2.2.5"
-    kapt "androidx.room:room-compiler:2.2.5"
-
-  // Kotlin Extensions and Coroutines support for Room
-    implementation "androidx.room:room-ktx:2.2.5"
-
+    implementation("androidx.room:room-runtime:2.4.0")
+    kapt("androidx.room:room-compiler:2.4.0")
 
   // Client OkHttpClient -> interceptor
   // Retrofit  Build baseUrl client addConverterFactory build
-    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
-    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
 
   // Coroutines life viewModelScope
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7'
@@ -51,11 +47,13 @@ Here are some ideas to get you started:
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     kapt 'com.github.bumptech.glide:compiler:4.11.0'
 
-  // Activity KTX for viewModels()
-    implementation "androidx.activity:activity-ktx:1.1.0"
-
   //Dagger - Hilt
     implementation "com.google.dagger:hilt-android:2.28-alpha"
     kapt "com.google.dagger:hilt-android-compiler:2.28-alpha"
     implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha02"
     kapt "androidx.hilt:hilt-compiler:1.0.0-alpha02"
+
+//testing
+    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0")
+    testImplementation("io.mockk:mockk:1.12.2")
+    androidTestImplementation("androidx.arch.core:core-testing:2.1.0")
