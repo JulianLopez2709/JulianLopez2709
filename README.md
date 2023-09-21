@@ -21,7 +21,7 @@ Here are some ideas to get you started:
     implementation "androidx.lifecycle:lifecycle-runtime:2.2.0"
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0"
 
-  // Room
+// Room
     implementation("androidx.room:room-runtime:2.4.0")
     kapt("androidx.room:room-compiler:2.4.0")
 
@@ -34,8 +34,8 @@ Here are some ideas to get you started:
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.5'
 
-  // Coroutine Lifecycle Scopes
-    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0"
+// Coroutine Lifecycle Scopes
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0"
 
   // Navigation Components
@@ -43,17 +43,20 @@ Here are some ideas to get you started:
     implementation "androidx.navigation:navigation-fragment-ktx:2.3.0"
     implementation "androidx.navigation:navigation-ui-ktx:2.3.0"
 
-  // Glide  with load into
-    implementation 'com.github.bumptech.glide:glide:4.11.0'
-    kapt 'com.github.bumptech.glide:compiler:4.11.0'
+// Glide  with load into
+   implementation("com.github.bumptech.glide:glide:4.16.0")
 
-  //Dagger - Hilt
-    implementation "com.google.dagger:hilt-android:2.28-alpha"
-    kapt "com.google.dagger:hilt-android-compiler:2.28-alpha"
-    implementation "androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha02"
-    kapt "androidx.hilt:hilt-compiler:1.0.0-alpha02"
+//Dagger - Hilt
+    implementation("com.google.dagger:hilt-android:2.48")
+    kapt("com.google.dagger:hilt-android-compiler:2.48")
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
+    id("com.google.dagger.hilt.android") version "2.48" apply false
 
-//testing
+//coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0")
-    testImplementation("io.mockk:mockk:1.12.2")
-    androidTestImplementation("androidx.arch.core:core-testing:2.1.0")
+
+//implementation test
+    testImplementation("io.mockk:mockk:1.13.7")
+    testImplementation("androidx.arch.core:core-testing:2.2.0")//2.1.0
