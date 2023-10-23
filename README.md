@@ -15,6 +15,11 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
+//plugin
+id("kotlin-kapt")
+id("com.google.dagger.hilt.android")
+id("com.google.dagger.hilt.android") version "2.48" apply false
+
 // Coroutine Lifecycle Scopes
     implementation("androidx.activity:activity-ktx:1.7.2")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
@@ -39,6 +44,8 @@ implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0")
 testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.0")
 
 //implementation test
+//@get:Rule
+//var rule: InstantTaskExecutorRule = InstantTaskExecutorRule()
 testImplementation("io.mockk:mockk:1.13.7")
 testImplementation("androidx.arch.core:core-testing:2.2.0")//2.1.0
 
